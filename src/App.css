@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5dc;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 30px;
+}
+
+.add-todo-section {
+  background: #fff;
+  border: 1px solid #000;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.todo-input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #000;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.add-btn {
+  padding: 12px 24px;
+  background: transparent;
+  border: 1px solid #000;
+  border-radius: 4px;
+  color: #000;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.2s;
+}
+
+.add-btn:hover {
+  background-color: #f0f0f0;
+}
+
+.description-input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #000;
+  border-radius: 4px;
+  font-size: 16px;
+  resize: vertical;
+  min-height: 80px;
+  font-family: inherit;
+}
+
+.todo-list {
+  max-height: calc(100vh - 300px);
+  overflow-y: auto;
+  border: 1px solid #000;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.todo-item:hover {
+  background-color: #f9f9f9;
+}
+
+.todo-checkbox {
+  width: 18px;
+  height: 18px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.todo-text {
+  flex: 1;
+  font-size: 16px;
+  color: #000;
+}
+
+.delete-btn {
+  background: #ff4444;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s;
+}
+
+.delete-btn:hover {
+  background: #cc0000;
+}
+
+.todo-description {
+  padding: 15px 20px 15px 53px;
+  background-color: #f8f8f8;
+  font-size: 14px;
+  color: #333;
+  line-height: 1.5;
+  display: none;
+}
+
+.todo-description.show {
+  display: block;
+}
+
+.separator {
+  height: 1px;
+  background-color: #ddd;
+  margin: 0 20px;
+}
+
+/* Scrollbar styling */
+.todo-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.todo-list::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.todo-list::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.todo-list::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
